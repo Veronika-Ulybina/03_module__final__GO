@@ -1,0 +1,495 @@
+.back {
+	padding-top: 35px;
+	padding-bottom: 10px;
+}
+
+.page__link-back {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-column-gap: 10px;
+	-moz-column-gap: 10px;
+	column-gap: 10px;
+	font-size: 22px;
+	line-height: 127%;
+}
+
+.page__link-back:before {
+	content: '';
+	width: 31px;
+	height: 16px;
+	background-image: url("../img/inner/arrow.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.banner-hall {
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+.banner-hall__title {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 750px;
+	font-size: 90px;
+	line-height: 89%;
+	text-transform: uppercase;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 100px;
+}
+
+.banner-hall__title_vibes {
+	background-image: url("../img/inner/vibes.jpg");
+}
+
+.banner-hall__title_star-wars {
+	background-image: url("../img/inner/star-wars.jpg");
+}
+
+.banner-hall__title_wild-west {
+	background-image: url("../img/inner/wild-west.jpg");
+}
+
+.banner-hall__title_neon-style {
+	background-image: url("../img/inner/neon-style.jpg");
+}
+
+.banner-hall__text {
+	max-width: 1000px;
+	font-size: 24px;
+	line-height: 150%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.about-hall {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.about-hall__title {
+	margin-bottom: 40px;
+}
+
+.about-hall__block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-column-gap: 80px;
+	-moz-column-gap: 80px;
+	column-gap: 80px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.about-hall__block:before {
+	content: '';
+	-ms-flex-preferred-size: 600px;
+	flex-basis: 600px;
+	height: 424px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.about-hall__block_vibes:before {
+	background-image: url("../img/our-halls/vibes.jpg");
+}
+
+.about-hall__block_star-wars:before {
+	background-image: url("../img/our-halls/star-wars.jpg");
+}
+
+.about-hall__block_wild-west:before {
+	background-image: url("../img/our-halls/wild-west.jpg");
+}
+
+.about-hall__block_neon-style:before {
+	background-image: url("../img/our-halls/neon-style.jpg");
+}
+
+.about-hall__text-block {
+	-ms-flex-preferred-size: 500px;
+	flex-basis: 500px;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.about-hall__text:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.choose-room {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.choose-room__title {
+	margin-bottom: 40px;
+}
+
+.choose-room-list {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	-ms-grid-rows: 229px;
+	grid-template-rows: 229px;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+}
+
+.choose-room-list > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+
+.choose-room-list > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}
+
+.choose-room-list > *:nth-child(3) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 5;
+}
+
+.choose-room-list__link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.choose-room-list__link_wild-west {
+	background-image: url("../img/our-halls/wild-west.jpg");
+}
+
+.choose-room-list__text {
+	-ms-flex-preferred-size: 100px;
+	flex-basis: 100px;
+	font-size: 30px;
+	line-height: 120%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.choose-room-list__link_star-wars {
+	background-image: url("../img/our-halls/star-wars.jpg");
+}
+
+.choose-room-list__link_neon-style {
+	background-image: url("../img/our-halls/neon-style.jpg");
+}
+
+.choose-room-list__link_vibes {
+	background-image: url("../img/our-halls/vibes.jpg");
+}
+
+.footer_inner-page {
+	padding-top: 32px;
+	padding-bottom: 44px;
+}
+
+@media (max-width: 1100px) {
+	
+	.banner-hall {
+		padding-bottom: 35px;
+	}
+	
+	.banner-hall__title {
+		height: 534px;
+		margin-bottom: 70px;
+	}
+	
+	.banner-hall__text {
+		max-width: 800px;
+		font-size: inherit;
+	}
+	
+	.about-hall {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	
+	.about-hall__title {
+		margin-bottom: 36px;
+	}
+	
+	.about-hall__block {
+		-webkit-column-gap: 30px;
+		-moz-column-gap: 30px;
+		column-gap: 30px;
+	}
+	
+	.about-hall__block:before {
+		-ms-flex-preferred-size: 461px;
+		flex-basis: 461px;
+		height: 326px;
+	}
+	
+	.about-hall__text-block {
+		-ms-flex-preferred-size: 413px;
+		flex-basis: 413px;
+		font-size: 18px;
+		line-height: 155%;
+	}
+	
+	.choose-room {
+		padding-top: 35px;
+		padding-bottom: 70px;
+	}
+	
+	.choose-room__title {
+		margin-bottom: 36px;
+	}
+	
+	.choose-room-list {
+		-ms-grid-rows: 172px;
+		grid-template-rows: 172px;
+	}
+}
+
+@media (max-width: 830px) {
+
+	.back {
+		padding-top: 25px;
+	}
+	
+	.page__link-back {
+		font-size: 16px;
+		line-height: 175%;
+	}
+	
+	.banner-hall {
+		padding-bottom: 30px;
+	}
+	
+	.banner-hall__title {
+		height: 402px;
+		font-size: 60px;
+		line-height: 120%;
+		margin-bottom: 60px;
+	}
+	
+	.banner-hall__text {
+		max-width: 688px;
+		font-size: 16px;
+	}
+	
+	.about-hall {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	
+	.about-hall__title {
+		margin-bottom: 30px;
+	}
+	
+	.about-hall__block {
+		-webkit-column-gap: 46px;
+		-moz-column-gap: 46px;
+		column-gap: 46px;
+	}
+	
+	.about-hall__block:before {
+		-ms-flex-preferred-size: 329px;
+		flex-basis: 329px;
+		height: 326px;
+	}
+	
+	.about-hall__text-block {
+		-ms-flex-preferred-size: 313px;
+		flex-basis: 313px;
+		font-size: 16px;
+		line-height: 175%;
+	}
+	
+	.about-hall__text-excerpt {
+		display: block;
+	}
+
+	.choose-room {
+		padding-top: 30px;
+		padding-bottom: 60px;
+	}
+	
+	.choose-room__title {
+		margin-bottom: 30px;
+	}
+	
+	.choose-room-list {
+		-ms-grid-rows: 134px;
+		grid-template-rows: 134px;
+		-webkit-column-gap: 8px;
+		-moz-column-gap: 8px;
+		column-gap: 8px;
+	}
+	
+	.choose-room-list__text {
+		font-size: inherit;
+	}
+}
+
+@media (max-width: 610px) {
+
+	.about-hall__block {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: unset;
+		-ms-flex-align: unset;
+		align-items: unset;
+		-webkit-column-gap: unset;
+		-moz-column-gap: unset;
+		column-gap: unset;
+		row-gap: 15px;
+	}
+
+	.about-hall__text-block {
+		-ms-flex-preferred-size: unset;
+		flex-basis: unset;
+	}
+
+	.about-hall__text-excerpt {
+		display: inline;
+	}
+
+	.choose-room-list {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		-ms-grid-rows: 200px 10px 200px 10px 200px;
+		grid-template-rows: repeat(3, 200px);
+		-webkit-column-gap: unset;
+		-moz-column-gap: unset;
+		column-gap: unset;
+		row-gap: 10px;
+	}
+
+	.choose-room-list > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+
+	.choose-room-list > *:nth-child(2) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+
+	.choose-room-list > *:nth-child(3) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 1;
+	}
+
+	.choose-room-list__text {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 450px) {
+
+	.back {
+		padding-top: 10px;
+	}
+	
+	.page__link-back {
+		-webkit-column-gap: 6px;
+		-moz-column-gap: 6px;
+		column-gap: 6px;
+		font-size: 12px;
+		line-height: 133%;
+	}
+	
+	.page__link-back:before {
+		width: 17px;
+		height: 8px;
+	}
+
+	.banner-hall {
+		padding-top: 5px;
+		padding-bottom: 15px;
+	}
+	
+	.banner-hall__title {
+		height: 300px;
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.banner-hall__text {
+		max-width: 280px;
+	}
+	
+	.about-hall {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	.about-hall__title {
+		margin-bottom: 15px;
+	}
+	
+	.about-hall__block:before {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 180px;
+		flex: 0 0 180px;
+		height: 100%;
+	}
+	
+	.about-hall__text-block {
+		font-size: 12px;
+		line-height: 133%;
+	}
+
+	.choose-room {
+		padding-top: 15px;
+		padding-bottom: 30px;
+	}
+	
+	.choose-room__title {
+		margin-bottom: 15px;
+	}
+	
+	.choose-room-list {
+		-ms-grid-rows: 140px 5px 140px 5px 140px;
+		grid-template-rows: repeat(3, 140px);
+		row-gap: 5px;
+	}
+
+	.choose-room-list__text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 320px) {
+
+	.banner-hall__title {
+		height: 168px;
+	}
+}

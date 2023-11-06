@@ -1,0 +1,25 @@
+@import 'var.css';
+
+@import 'normalize.css';
+
+@import 'global.css';
+
+@import 'header.css';
+
+@import 'banner.css';
+
+@import 'benefits.css';
+
+@import 'halls.css';
+
+@import 'booking.css';
+
+@import 'about.css';
+
+@import 'reviews.css';
+
+@import 'faq.css';
+
+@import 'inner.css';
+
+@import 'footer.css';

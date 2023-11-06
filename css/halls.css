@@ -1,0 +1,188 @@
+.halls {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.halls__title {
+	margin-bottom: 46px;
+}
+
+.halls-list {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 20px 1fr;
+	grid-template-columns: repeat(2, 1fr);
+	-ms-grid-rows: minmax(349px, auto) 20px minmax(349px, auto);
+	grid-template-rows: repeat(2, minmax(349px, auto));
+	gap: 20px;
+}
+
+.halls-list > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+
+.halls-list > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}
+
+.halls-list > *:nth-child(3) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+}
+
+.halls-list > *:nth-child(4) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 3;
+}
+
+.halls-list__link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.halls-list__link_vibes {
+	background-image: url('../img/our-halls/vibes.jpg');
+}
+
+.halls-list__link_star-wars {
+	background-image: url('../img/our-halls/star-wars.jpg');
+}
+
+.halls-list__link_wild-west {
+	background-image: url('../img/our-halls/wild-west.jpg');
+}
+
+.halls-list__link_neon-style {
+	background-image: url('../img/our-halls/neon-style.jpg');
+}
+
+.halls-list__text {
+	-ms-flex-preferred-size: 252px;
+	flex-basis: 252px;
+	font-size: 70px;
+	line-height: 114%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+@media (max-width: 1100px) {
+
+	.halls {
+		padding-top: 35px;
+		padding-bottom: 70px;
+	}
+	
+	.halls__title {
+		margin-bottom: 35px;
+	}
+	
+	.halls-list {
+		-ms-grid-rows: (minmax(267px, auto))[2];
+		grid-template-rows: repeat(2, minmax(267px, auto));
+	}
+
+	.halls-list__text {
+		font-size: 50px;
+		line-height: 120%;
+	}
+}
+
+@media (max-width: 830px) {
+
+	.halls {
+		padding-top: 30px;
+		padding-bottom: 62px;
+	}
+	
+	.halls__title {
+		margin-bottom: 35px;
+	}
+	
+	.halls-list {
+		-ms-grid-rows: minmax(200px, auto) 18px minmax(200px, auto);
+		grid-template-rows: repeat(2, minmax(200px, auto));
+		row-gap: 18px;
+	}
+
+	.halls-list__text {
+		-ms-flex-preferred-size: 121px;
+		flex-basis: 121px;
+		font-size: 40px;
+		line-height: 125%;
+		-webkit-transform: translateY(10%);
+		-ms-transform: translateY(10%);
+		transform: translateY(10%);
+	}
+}
+
+@media (max-width: 579px) {
+
+	.halls-list {
+		-ms-grid-rows: minmax(168px, auto) 10px minmax(168px, auto);
+		grid-template-rows: repeat(2, minmax(168px, auto));
+		gap: 10px;
+	}
+
+	.halls-list__text {
+		font-size: 26px;
+		line-height: 131%;
+		-webkit-transform: unset;
+		-ms-transform: unset;
+		transform: unset;
+	}
+}
+
+@media (max-width: 450px) {
+
+	.halls {
+		padding-top: 15px;
+		padding-bottom: 30px;
+	}
+	
+	.halls__title {
+		margin-bottom: 15px;
+	}
+	
+	.halls-list {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		-ms-grid-rows: (168px)[4];
+		grid-template-rows: repeat(4, 168px);
+		-webkit-column-gap: unset;
+		-moz-column-gap: unset;
+		column-gap: unset;
+	}
+	
+	.halls-list > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+	
+	.halls-list > *:nth-child(2) {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+	}
+	
+	.halls-list > *:nth-child(3) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+	
+	.halls-list > *:nth-child(4) {
+		-ms-grid-row: 4;
+		-ms-grid-column: 1;
+	}
+}

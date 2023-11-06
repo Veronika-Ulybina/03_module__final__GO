@@ -1,0 +1,388 @@
+.benefits {
+	padding-top: 50px;
+	padding-bottom: 119px;
+}
+
+.benefits__title {
+	max-width: 700px;
+	margin: 0 auto 43px;
+}
+
+.title {
+	font-size: 40px;
+	line-height: 125%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.benefits-list {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	-ms-grid-rows: minmax(228px, auto) 40px minmax(228px, auto);
+	grid-template-rows: repeat(2, minmax(228px, auto));
+	gap: 40px 20px;
+}
+
+.benefits-list > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+
+.benefits-list > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}
+
+.benefits-list > *:nth-child(3) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 5;
+}
+
+.benefits-list > *:nth-child(4) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+}
+
+.benefits-list > *:nth-child(5) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 3;
+}
+
+.benefits-list > *:nth-child(6) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 5;
+}
+
+.benefits-list__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	-webkit-transition-property: -webkit-filter, -webkit-transform;
+	transition-property: -webkit-filter, -webkit-transform;
+	-o-transition-property: filter, transform;
+	transition-property: filter, transform;
+	transition-property: filter, transform, -webkit-filter, -webkit-transform;
+	-webkit-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	transition-duration: .5s;
+	-webkit-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.benefits-list__item:hover {
+	-webkit-filter: drop-shadow(0 0 4px #666);
+	filter: drop-shadow(0 0 4px #666);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.benefits-list__item_vr {
+	background-image: url('../img/benefits/vr-glasses.jpg');
+	background-position: right center;
+}
+
+.benefits-list__item_audio {
+	background-image: url('../img/benefits/audio-system.jpg');
+	-webkit-transform: translateY(70px);
+	-ms-transform: translateY(70px);
+	transform: translateY(70px);
+}
+
+.benefits-list__item_audio:hover {
+	-webkit-transform: translateY(70px) scale(1.1);
+	-ms-transform: translateY(70px) scale(1.1);
+	transform: translateY(70px) scale(1.1);
+}
+
+.benefits-list__item_karaoke {
+	background-image: url('../img/benefits/karaoke.jpg');
+}
+
+.benefits-list__item_games {
+	background-image: url('../img/benefits/board-games.jpg');
+}
+
+.benefits-list__item_cinema {
+	background-image: url('../img/benefits/cinema-services.jpg');
+	-webkit-transform: translateY(69px);
+	-ms-transform: translateY(69px);
+	transform: translateY(69px);
+}
+
+.benefits-list__item_cinema:hover {
+	-webkit-transform: translateY(69px) scale(1.1);
+	-ms-transform: translateY(69px) scale(1.1);
+	transform: translateY(69px) scale(1.1);
+}
+
+.benefits-list__item_playstation {
+	background-image: url('../img/benefits/playstation.jpg');
+}
+
+.benefits-list__text {
+	-ms-flex-preferred-size: 300px;
+	flex-basis: 300px;
+	min-height: 56px;
+	line-height: 140%;
+	margin-bottom: 6px;
+}
+
+.benefits-list__text_narrow {
+	-ms-flex-preferred-size: 198px;
+	flex-basis: 198px;
+}
+
+@media (max-width: 1100px) {
+
+	.benefits {
+		padding-top: 42px;
+		padding-bottom: 87px;
+	}
+	
+	.benefits__title {
+		max-width: 535px;
+		margin: 0 auto 37px;
+	}
+	
+	.title {
+		font-size: 30px;
+		line-height: 133%;
+	}
+
+	.benefits-list {
+		-ms-grid-rows: minmax(172px, auto) 30px minmax(172px, auto);
+		grid-template-rows: repeat(2, minmax(172px, auto));
+		gap: 30px 22px;
+	}
+	
+	.benefits-list__item {
+		padding-left: 20px;
+	}
+
+	.benefits-list__item_audio {
+		background-image: url('../img/benefits/audio-system.jpg');
+		-webkit-transform: translateY(53px);
+		-ms-transform: translateY(53px);
+		transform: translateY(53px);
+	}
+	
+	.benefits-list__item_audio:hover {
+		-webkit-transform: translateY(53px) scale(1.1);
+		-ms-transform: translateY(53px) scale(1.1);
+		transform: translateY(53px) scale(1.1);
+	}
+	
+	.benefits-list__item_cinema {
+		background-image: url('../img/benefits/cinema-services.jpg');
+		-webkit-transform: translateY(52px);
+		-ms-transform: translateY(52px);
+		transform: translateY(52px);
+		margin-bottom: 3px;
+		padding-right: 10px;
+	}
+	
+	.benefits-list__item_cinema:hover {
+		-webkit-transform: translateY(52px) scale(1.1);
+		-ms-transform: translateY(52px) scale(1.1);
+		transform: translateY(52px) scale(1.1);
+	}
+	
+	.benefits-list__text {
+		-ms-flex-preferred-size: 247px;
+		flex-basis: 247px;
+		margin-bottom: 2px;
+	}
+	
+	.benefits-list__text_narrow {
+		-ms-flex-preferred-size: 198px;
+		flex-basis: 198px;
+	}
+}
+
+@media (max-width: 830px) {
+
+	.benefits {
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+	
+	.benefits__title {
+		max-width: 430px;
+		margin: 0 auto 30px;
+	}
+	
+	.title {
+		font-size: 24px;
+		line-height: 150%;
+	}
+
+	.benefits-list {
+		-ms-grid-columns: 1fr 20px 1fr;
+		grid-template-columns: repeat(2, 1fr);
+		-ms-grid-rows: minmax(200px, auto) 20px minmax(200px, auto) 20px minmax(200px, auto);
+		grid-template-rows: repeat(3, minmax(200px, auto));
+		gap: 20px;
+	}
+
+	.benefits-list > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+
+	.benefits-list > *:nth-child(2) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+	}
+
+	.benefits-list > *:nth-child(3) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+
+	.benefits-list > *:nth-child(4) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 3;
+	}
+
+	.benefits-list > *:nth-child(5) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 1;
+	}
+
+	.benefits-list > *:nth-child(6) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 3;
+	}
+	
+	.benefits-list__item {
+		padding-left: 30px;
+	}
+
+	.benefits-list__item:hover {
+		-webkit-filter: unset;
+		filter: unset;
+		-webkit-transform: unset;
+		-ms-transform: unset;
+		transform: unset;
+	}
+	
+	.benefits-list__item_audio {
+		-webkit-transform: unset;
+		-ms-transform: unset;
+		transform: unset;
+		padding-right: 10px;
+	}
+	
+	.benefits-list__item_audio:hover {
+		-webkit-transform: unset;
+		-ms-transform: unset;
+		transform: unset;
+	}
+
+	.benefits-list__item_karaoke {
+		padding-right: 10px;
+	}
+	
+	.benefits-list__item_cinema {
+		-webkit-transform: unset;
+		-ms-transform: unset;
+		transform: unset;
+		margin-bottom: 0;
+	}
+	
+	.benefits-list__item_cinema:hover {
+		-webkit-transform: unset;
+		-ms-transform: unset;
+		transform: unset;
+	}
+	
+	.benefits-list__text {
+		-ms-flex-preferred-size: 274px;
+		flex-basis: 274px;
+		margin-bottom: 12px;
+	}
+	
+	.benefits-list__text_narrow {
+		-ms-flex-preferred-size: 198px;
+		flex-basis: 198px;
+	}
+}
+
+@media (max-width: 579px) {
+
+	.benefits-list {
+		-ms-grid-rows: minmax(150px, auto) 10px minmax(150px, auto) 10px minmax(150px, auto);
+		grid-template-rows: repeat(3, minmax(150px, auto));
+		gap: 10px;
+	}
+
+	.benefits-list__item {
+		padding-left: 10px;
+	}
+
+	.benefits-list__text {
+		min-height: 43px;
+		font-size: 14px;
+		margin-bottom: 3px;
+	}
+	
+	.benefits-list__text_narrow {
+		-ms-flex-preferred-size: 138px;
+		flex-basis: 138px;
+	}
+}
+
+@media (max-width: 450px) {
+
+	.benefits {
+		padding-top: 23px;
+		padding-bottom: 15px;
+	}
+	
+	.title {
+		font-size: 14px;
+		line-height: 129%;
+	}
+
+	.benefits__title {
+		margin: 0 auto 15px;
+	}
+
+	.benefits-list {
+		-ms-grid-rows: (minmax(100px, auto))[3];
+		grid-template-rows: repeat(3, minmax(100px, auto));
+	}
+
+	.benefits-list__text {
+		-ms-flex-preferred-size: 110px;
+		flex-basis: 110px;
+		font-size: 10px;
+	}
+	
+	.benefits-list__text_narrow {
+		-ms-flex-preferred-size: 98px;
+		flex-basis: 98px;
+	}
+}
+
+@media (max-width: 320px) {
+
+	.benefits-list {
+		-ms-grid-rows: minmax(75px, auto) 10px minmax(75px, auto) 10px minmax(75px, auto);
+		grid-template-rows: repeat(3, minmax(75px, auto));
+		gap: 10px;
+	}
+}
